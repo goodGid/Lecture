@@ -2,6 +2,8 @@
 
 ## 3. Stream
 
+### 3.1 Stream 소개 
+
 > 200928 (Mon)
 
 * 스트림은 기존의 데이터 소스를 변경하지 않는다.
@@ -42,7 +44,7 @@ gid
 goodgid
 ```
 
-<br>
+---
 
 * 병렬 처리(Parallel)가 가능하다.
 
@@ -50,7 +52,7 @@ goodgid
 
 * Why? 
 
-  Context Switching 등등
+  Context Switching 등 문제가 있다.
 
   그래서 병렬 처리는 데이터가 엄청나게 많을 경우에 좋다.
 
@@ -100,3 +102,9 @@ goodgid
 * Case 1에서 **Thread Name** 값은 
 
   프로그램을 실행시킬 때 마다 달라진다.
+
+
+  ---
+
+
+  ### 3.2 Stream API
