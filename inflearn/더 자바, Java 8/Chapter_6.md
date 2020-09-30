@@ -242,7 +242,7 @@ future.cancel(false);
 
 ``` java
 public static void main(String[] args) throws ExecutionException, InterruptedException {
-    ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
+    ExecutorService executorService = Executors.newFixedThreadPool(5);
 
     Callable<String> callable_1 = () -> {
         Thread.sleep(1000L);
@@ -275,7 +275,7 @@ public static void main(String[] args) throws ExecutionException, InterruptedExc
 }
 
 ## Output
-// After 6 Seconds
+// After 3 Seconds
 callable_1
 callable_2
 callable_3
@@ -292,7 +292,7 @@ callable_3
 ``` java
 
 public static void main(String[] args) throws ExecutionException, InterruptedException {
-    ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
+    ExecutorService executorService = Executors.newFixedThreadPool(5);
 
     Callable<String> callable_1 = () -> {
         Thread.sleep(5000L);
