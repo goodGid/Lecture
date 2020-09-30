@@ -14,12 +14,6 @@
 
   이게 스펙으로 인정되어서 자바 8에 추가되었다.
 
-* 주요 API
-    
-    - 기계용 시간과 인간 친화적 시간 구분 가능
-
-    - 기간을 표현할 때 Duration(시간 기반)과 Period(날짜 기반) 사용 가능
-
 
 ---
 
@@ -28,9 +22,7 @@
 
 > 200930 (Wed)
 
-* 기계용 시간
-
-  **Instant**를 사용한다.
+* **Instant**
 
 ``` java
 Instant instant = Instant.now();
@@ -44,7 +36,7 @@ ZonedDateTime zonedDateTime = instant.atZone(zone);
 System.out.println(zonedDateTime); // 2020-09-30T07:57:35.775207+09:00[Asia/Seoul]
 ```
 
-* 인간 친화적 시간
+* **LocalDateTime**
 
 ``` java
 /**
@@ -71,8 +63,6 @@ System.out.println(nowInUSA); // 2020-09-29T16:04:26.833273-07:00[America/Los_An
 
 * Period 
 
-  인간을 위한 시간을 비교
-
 ``` java
 LocalDate today = LocalDate.now();
 System.out.println("today : " + today);
@@ -97,9 +87,7 @@ Day difference : 1
 
 * Duration
 
-  기계를 위한 시간 비교
-
-* **Instant**를 갖고 비교한다.
+  **Instant**를 갖고 비교한다.
 
 
 ``` java
