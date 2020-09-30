@@ -2,7 +2,7 @@
 
 ## 6. CompletableFuture
 
-### 6.1
+### 6.1 자바 Concurrent 프로그래밍 소개
 
 > 200930 (Wed)
 
