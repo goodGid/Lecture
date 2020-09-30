@@ -12,4 +12,4 @@
 
 * [6. CompletableFuture](https://github.com/goodGid/Lecture/blob/master/inflearn/%EB%8D%94%20%EC%9E%90%EB%B0%94%2C%20Java%208/Chapter_6.md)
 
-  * 6.1과 6.2는 CompletableFuture 개념을 학습할 때 다시 듣자.
+  * 6.1과 6.2는 CompletableFuture 개념을 사용할 때 한번 더 듣자.
