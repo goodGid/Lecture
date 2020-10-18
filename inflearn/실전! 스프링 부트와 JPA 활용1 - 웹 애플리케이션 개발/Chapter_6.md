@@ -21,7 +21,7 @@
 
 > 201018 (Sun)
 
-<h2> [도메인 모델 패턴](http://martinfowler.com/eaaCatalog/domainModel.html)</h2>
+<h2> 도메인 모델 패턴 </h2>
 
 * 비즈니스 로직 대부분이 엔티티에 있다. 
 
@@ -29,17 +29,17 @@
 
 * 이처럼 엔티티가 비즈니스 로직을 가지고 
   
-  객체 지향의 특성을 적극 활용하는 것을 **[도메인 모델 패턴](http://martinfowler.com/eaaCatalog/domainModel.html)**이라 한다. 
+  객체 지향의 특성을 적극 활용하는 것을 [도메인 모델 패턴](http://martinfowler.com/eaaCatalog/domainModel.html)이라 한다. 
 
 ---
 
-<h2> 트랜잭션 스크립트 패턴(http://martinfowler.com/eaaCatalog/transactionScript.html) </h2>
+<h2> 트랜잭션 스크립트 패턴 </h2>
 
 * 도메인 모델 패턴과는 반대로 
 
   엔티티에는 비즈니스 로직이 거의 없고 
   
-  Service Layer에서 대부분의 비즈니스 로직을 처리하는 것을 **[트랜잭션 스크립트 패턴](http://martinfowler.com/eaaCatalog/transactionScript.html)**이라 한다.
+  Service Layer에서 대부분의 비즈니스 로직을 처리하는 것을 [트랜잭션 스크립트 패턴](http://martinfowler.com/eaaCatalog/transactionScript.html)이라 한다.
 
 ---
 
