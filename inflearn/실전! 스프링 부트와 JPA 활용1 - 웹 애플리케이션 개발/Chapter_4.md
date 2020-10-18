@@ -45,7 +45,11 @@ public class MemberService {
     @Autowired
     private MemberRepository memberRepository;
 
-    // Read성 Method가 아닐 경우엔 @Transactional를 따로 선언해준다.
+    /**
+     * [주의]
+     * @Transactional 선언을 override 해주지 않으면
+     * readOnly 속성에 의해서 insert가 되지 않는다.
+     */
     @Transactional
     public Long join(Member member) {
         memberRepository.save(member);
