@@ -18,8 +18,8 @@
 ``` java
 @Embeddable
 @Embedded
-@AttributeOverrides
-@AttributeOverride
+@AttributeOverrides // 15:40
+@AttributeOverride // 15:40
 ```
 
 ---
