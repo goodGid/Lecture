@@ -35,6 +35,77 @@
 
   같이 사용하면 의도치 않게 Side-Effect이 발생한다.
 
+<br>
+  
+![](./img/Chapter_9_3_1.png)
+
+* 회원1이 city 값을 변경하면
+
+  회원2의 city 값 또한 같이 변경이 된다.
+
+  코드로 표현하자면 다음과 같다.
+
+``` java
+City city = new City("xxx");
+member1.setCity(city)
+member2.setCity(city)
+
+member1.getCity().setName("yyy");
+```
+
+
+<br>
+
+![](./img/Chapter_9_3_2.png)
+
+* 그러므로 회원2에서 city 값을 사용하려한다면 다음처럼 사용해야한다.
+
+``` java
+City city1 = new City("xxx");
+member1.setCity(city1)
+
+City city2 = new City(city1.getName());
+member2.setCity(city2)
+
+member1.getCity().setName("yyy");
+```
+
+* 그렇지만 다음처럼 사용해도 컴파일은 성공하므로 항상 위험에 노출될 수 있다.
+
+``` java
+City city1 = new City("xxx");
+member1.setCity(city1)
+
+City city2 = new City(city1.getName());
+member2.setCity(city1) // city2가 아닌 city1로 값 세팅
+```
+
+<br>
+
+* 객체 타입의 한계 
+
+![](./img/Chapter_9_3_3.png)
+
+
+``` java
+// 기본 타입
+int a = 10;
+int b = a; // 기본 타입은 값을 복사한다.
+
+// 객체 타입
+Address a = new Address("Old");
+Address a = b; // 객체 타입은 참조를 전달한다.
+b.setCity("New");
+```
+
+* 위와 같은 객체 타입의 한계를 방지하려면
+
+  객체 타입을 수정 할 수 없게 만들면 부작용을 **원천 차단**이 가능하다.
+
+  즉 값 타입은 **불변 객체**(Immutable Object)로 설계한다.
+
+  ex) Setter를 없앤다.
+
 ---
 
 ### 9.4 값 타입의 비교
