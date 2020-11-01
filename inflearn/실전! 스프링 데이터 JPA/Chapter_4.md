@@ -13,7 +13,7 @@
 
 > 201101 (Sun)
 
-* Pass
+* [Spring Data JPA : Auditing with @CreatedDate, @LastModifiedDate, @CreatedBy, @LastModifiedBy](http://goodgid.github.io/Spring-Data-JPA-Auditing/)
 
 ---
 
