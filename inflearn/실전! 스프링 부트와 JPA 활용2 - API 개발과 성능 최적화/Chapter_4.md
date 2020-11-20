@@ -94,7 +94,7 @@ public List<Order> findAllWithItem() {
 
 <h2> default_batch_fetch_size </h2>
 
-* DB간 관계는 다음과 같다.
+* DB 관계는 다음과 같다.
 
 ```
 Order : OrderItem = 1 : N
@@ -314,3 +314,34 @@ spring:
 ```
 
 * Orderitem과 Item을 조회하는 Query의 Where 절에서 **in**이 사용되는 걸 볼 수 있다.
+
+
+---
+
+### 4.5 주문 조회 V4: JPA에서 DTO 직접 조회
+
+> 201025 (Sun)
+
+* ToOne(N:1, 1:1) 관계들을 먼저 조회하고 
+
+  ToMany(1:N) 관계는 각각 별도로 처리한다.
+
+* 이런 방식을 선택한 이유는 다음과 같다.
+
+  ToOne 관계는 조인해도 데이터 row 수가 증가하지 않는다. 
+  
+  하지만 ToMany(1:N) 관계는 조인하면 row 수가 증가한다.
+
+* row 수가 증가하지 않는 ToOne 관계는 조인으로 최적화 하기 쉬우므로 한번에 조회하고
+
+  ToMany 관계는 최적화 하기 어려우므로 **별도의 메서드**로 조회한다.
+
+
+* ref 
+
+```
+http://localhost:8080/api/v4/orders 호출하면
+OrderQueryRepository.class 클래스를 사용하는데
+여기서 발생하는 로그를 보면서 
+각 로그가 왜 발생했는지 확인해보자.
+```
