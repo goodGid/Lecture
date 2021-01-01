@@ -57,6 +57,8 @@ public class Book extends Item {
 }
 ```
 
+![](./img/Chapter_7_1_2.png)
+
 
 
 ---
