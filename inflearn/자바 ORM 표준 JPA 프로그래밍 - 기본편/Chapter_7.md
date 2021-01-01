@@ -36,6 +36,30 @@
   설정한 값이 들어간다. 
 
   따로 값 설정을 하지 않으면 Default로 Entity Name이 들어간다.
+  
+  
+``` java
+@Entity
+@Getter
+@Setter
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "dtype")
+public class Item {
+  ...
+}
+
+@Entity
+@Getter
+@Setter
+@DiscriminatorValue(value = "B")
+public class Book extends Item {
+  ...
+}
+```
+
+![](./img/Chapter_7_1_2.png)
+
+
 
 ---
 
