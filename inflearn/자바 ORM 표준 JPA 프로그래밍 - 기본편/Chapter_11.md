@@ -36,6 +36,10 @@
 
 ![](./img/Chapter_11_2_1.png)
 
+* SQL에서 사용하는 개념이 아니라 
+
+  JPQL에서 새로 생겨난 개념이다.
+
 ![](./img/Chapter_11_2_2.png)
 
 ![](./img/Chapter_11_2_3.png)
@@ -44,9 +48,21 @@
 
 ![](./img/Chapter_11_2_5.png)
 
+* **join fetch t.members**가 아니라 
+
+  **join t.members**로 조회를 한다.
+
 ![](./img/Chapter_11_2_6.png)
 
+* JPQL은 결과 반환 시 연관관계에 대해 신경쓰지 않는다.
+
+  만약 연관관계를 신경쓰고 싶다면 직접 fetch join을 사용해줘야 한다.
+
 ![](./img/Chapter_11_2_7.png)
+
+* fetch join을 하면 **즉시 로딩**으로 갖고온다.
+
+
 
 ---
 
