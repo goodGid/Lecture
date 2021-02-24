@@ -58,7 +58,7 @@
 
 * 영속 엔티티의 동일성 보장 (07:53)
 
-    - 1차 캐시로 Repeatable Read 등급의 Isolation Level을 
+    - 1차 캐시로 **Repeatable Read 등급의 Isolation Level**을 
 
       DB가 아니라 Application에서 제공해준다.
 
