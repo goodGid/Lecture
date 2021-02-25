@@ -76,7 +76,6 @@
 
 ![](./img/Chapter_11_3_1.png)
 
-
 > 페치 조인 대상에는 별칭을 줄 수 없다.
 
 ```
@@ -87,7 +86,7 @@ select t from Team t join fetch t.members m where m.age > 10
 
 * 하지만 페치 조인 대상(= members)에 별칭을 준다는 건 
   
-  별칭을 사용하여 또다른 조건을 사용하겠다는 뜻이다.
+  별칭을 사용하여 또 다른 조건을 사용하겠다는 뜻이다.
   
 * 그런데 다음과 같은 상황이 벌어질 수 있다.
 
@@ -105,7 +104,9 @@ select t from Team t join fetch t.members m where m.age > 10
   
   최악으로는 영속성 컨텍스트를 대상으로 다시 DB에 Insert/Update를 하게 되면
   
-  조회 시점에 누락된 데이터는 강제로 삭제가 된다.
+  조회 시점에 누락된 데이터는 강제로 삭제된다.
+
+---
 
 * 1:N는 데이터가 뻥튀기된다.
 
