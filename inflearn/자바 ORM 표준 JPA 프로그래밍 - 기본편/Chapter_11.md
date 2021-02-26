@@ -52,6 +52,16 @@
 
   **join t.members**로 조회를 한다.
 
+* 그리고 그냥 join은 
+
+  실제 Query가 나갈 때 
+  
+  where절에 조건이 추가만 될 뿐
+
+  (= members)
+
+  실제 select 절에는 Team에 대한 정보만 가져온다.
+
 ![](./img/Chapter_11_2_6.png)
 
 * JPQL은 결과 반환 시 연관관계에 대해 신경쓰지 않는다.
@@ -61,8 +71,6 @@
 ![](./img/Chapter_11_2_7.png)
 
 * fetch join을 하면 **즉시 로딩**으로 갖고온다.
-
-
 
 ---
 
