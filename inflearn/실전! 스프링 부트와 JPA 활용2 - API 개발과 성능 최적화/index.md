@@ -12,3 +12,5 @@
 
 * [5. API 개발 고급 - 실무 필수 최적화](https://github.com/goodGid/Lecture/blob/master/inflearn/%EC%8B%A4%EC%A0%84!%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B6%80%ED%8A%B8%EC%99%80%20JPA%20%ED%99%9C%EC%9A%A92%20-%20API%20%EA%B0%9C%EB%B0%9C%EA%B3%BC%20%EC%84%B1%EB%8A%A5%20%EC%B5%9C%EC%A0%81%ED%99%94/Chapter_5.md)
 
+  - [5.1 OSIV와 최적화](https://github.com/goodGid/Lecture/blob/master/inflearn/%EC%8B%A4%EC%A0%84!%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B6%80%ED%8A%B8%EC%99%80%20JPA%20%ED%99%9C%EC%9A%A92%20-%20API%20%EA%B0%9C%EB%B0%9C%EA%B3%BC%20%EC%84%B1%EB%8A%A5%20%EC%B5%9C%EC%A0%81%ED%99%94/Chapter_5.md#51-osiv%EC%99%80-%EC%B5%9C%EC%A0%81%ED%99%94)
+
